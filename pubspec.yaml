@@ -1,0 +1,42 @@
+name: kakeibo
+description: A new Flutter application.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+  flutter_calendar_carousel: ^1.4.12
+  toast: ^0.1.5
+  http: ^0.12.1
+  intl: ^0.16.1
+  flutter_native_splash: ^0.1.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+  fonts:
+    - family: Exo
+      fonts:
+        - asset: assets/fonts/Exo-Italic-VariableFont_wght.ttf
+    - family: Yomogi
+      fonts:
+        - asset: assets/fonts/yomogifont.ttf
+
+  assets:
+    - assets/image/
+
+flutter_native_splash:
+  image: "assets/image/money.png"
+  color: "2e2e2e"
