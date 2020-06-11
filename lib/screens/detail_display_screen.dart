@@ -199,14 +199,19 @@ class _DetailDisplayScreenState extends State<DetailDisplayScreen> {
                       Align(),
                     ]),
                     TableRow(children: [
-                      _getTextDispWidget('month average'),
+                      _getTextDispWidget('spend'),
                       _getTextDispWidget(
-                          formatter.format(monthAverage).toString()),
-                      _getTextDispWidget(
-                          '(${formatter.format(monthlySpendTotal).toString()} / ${aveDay})'),
+                          '${formatter.format(monthlySpendTotal).toString()}'),
+                      Align(),
                     ]),
                     TableRow(children: [
-                      _getTextDispWidget('day spend'),
+                      _getTextDispWidget('average'),
+                      _getTextDispWidget(
+                          formatter.format(monthAverage).toString()),
+                      Align(),
+                    ]),
+                    TableRow(children: [
+                      _getTextDispWidget('oneday'),
                       _getTextDispWidget('$spend'),
                       Center(
                         child: IconButton(
